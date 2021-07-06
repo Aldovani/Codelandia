@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background-color: #181818;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.header p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nameShop {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #181818;
+}
+
+.container-banner-text {
+  display: flex;
+  height: 380px;
+  margin-bottom: 60px;
+}
+.container-banner-text .content {
+  color: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.container-banner-text .content::before {
+  content: "";
+  background-attachment: fixed;
+  display: block;
+  background-image: url("../img/wallpaper.jpeg");
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+.container-banner-text .content .title {
+  max-width: 480px;
+  margin-left: 10%;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 35.31px;
+}
+.container-banner-text .content .title h2 {
+  font-size: clamp(16px, 2rem, 32px);
+}
+.container-banner-text .content .title .text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.destaque {
+  text-align: center;
+}
+.destaque p {
+  margin: 20px 0 60px 0;
+}
+.destaque .tenis {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 40px 12px;
+}
+.destaque .tenis img {
+  width: 250px;
+  height: 150px;
+  transition: all 500ms;
+}
+.destaque .tenis li {
+  height: 300px;
+  width: 270px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebe9ea;
+  border-radius: 4px;
+  transition: transform 500ms;
+}
+.destaque .tenis li:hover {
+  transform: translateY(-10px) !important;
+}
+.destaque .tenis li:hover .tenis-descripition {
+  opacity: 1;
+}
+.destaque .tenis li .tenis-descripition {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6f6f6;
+  background: #18181880;
+}
+
+.footer {
+  background-color: #181818;
+  color: #f6f6f6;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 750px) {
+  .container-banner-text .content .title {
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 617px) {
+  .destaque .tenis li {
+    width: 100%;
+  }
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #181818;
+}
+
+@media (max-width: 420px) {
+  .destaque p {
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

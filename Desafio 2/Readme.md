@@ -1,14 +1,13 @@
-<h1 align="center"> 🏆 Desafio 01</h1>
+<h1 align="center"> 🏆 Desafio 02</h1>
 
-
-<p align="center">📰  Pagina inicial de um blog de noticias </p>
+<p align="center">  shop </p>
 <p align="center">
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#layout">Layout</a> 
 </p>
 </br>
 <p align="center">
-  <img alt="Project" src=".github/desafio1.svg">
+  <img alt="Project" src=".github/desafio2.svg">
 </p>
 
 </br>
@@ -19,7 +18,7 @@
 
 </div>
 
-## 👉 [Deploy da Aplicação](https://mystifying-kalam-a6e391.netlify.app/ )
+## 👉 [Deploy da Aplicação](https://mystifying-kalam-a6e391.netlify.app/)
 
 </br>
 
@@ -41,6 +40,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Você pode visualizar o layout do projeto através do link abaixo:
 
-<a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Codel%C3%A2ndia---Desafiosnode-id=0%3A1">Layout Web</a>
+<a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Codel%C3%A2ndia---Desafios?node-id=1973%3A39">Layout Web</a>
 
 </div>
