@@ -7,8 +7,8 @@
 ## Desafios
 
 ##### - [x]  [Desafio-01](https://github.com/Aldovani/codelandia/tree/master/Desafio%201)
-##### - [x]  [Desafio-02]()
-#### - [ ] [Desafio-03]()
+##### - [x]  [Desafio-02](https://github.com/Aldovani/codelandia/tree/master/Desafio%202)
+
 
 
 
