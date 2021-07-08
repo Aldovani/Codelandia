@@ -32,7 +32,7 @@ $backgroundtenis: rgba(235, 233, 234, 1);
   height: 380px;
   margin-bottom: 60px;
 
-  .content {
+  .banner {
     color: $white;
     position: relative;
     overflow: hidden;
@@ -50,7 +50,7 @@ $backgroundtenis: rgba(235, 233, 234, 1);
       filter: brightness(0.5);
     }
 
-    .title {
+    .content {
       max-width: 480px;
       margin-left: 10%;
       font-weight: 700;
@@ -103,7 +103,7 @@ $backgroundtenis: rgba(235, 233, 234, 1);
       justify-content: center;
       background-color: $backgroundtenis;
       border-radius: 4px;
-      transition: transform 500ms;
+      transition: transform 500ms !important;
 
       &:hover {
         transform: translateY(-10px) !important;
@@ -120,6 +120,7 @@ $backgroundtenis: rgba(235, 233, 234, 1);
         top: 0;
         opacity: 0;
         display: flex;
+        border-radius: 8px;
         align-items: center;
         justify-content: center;
         color: $white;

@@ -29,13 +29,13 @@
   height: 380px;
   margin-bottom: 60px;
 }
-.container-banner-text .content {
+.container-banner-text .banner {
   color: #f6f6f6;
   position: relative;
   overflow: hidden;
   z-index: 2;
 }
-.container-banner-text .content::before {
+.container-banner-text .banner::before {
   content: "";
   background-attachment: fixed;
   display: block;
@@ -47,7 +47,7 @@
   background-position: center;
   filter: brightness(0.5);
 }
-.container-banner-text .content .title {
+.container-banner-text .banner .content {
   max-width: 480px;
   margin-left: 10%;
   font-weight: 700;
@@ -56,10 +56,10 @@
   transform: translateY(-50%);
   line-height: 35.31px;
 }
-.container-banner-text .content .title h2 {
+.container-banner-text .banner .content h2 {
   font-size: clamp(16px, 2rem, 32px);
 }
-.container-banner-text .content .title .text {
+.container-banner-text .banner .content .text {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -95,7 +95,7 @@
   justify-content: center;
   background-color: #ebe9ea;
   border-radius: 4px;
-  transition: transform 500ms;
+  transition: transform 500ms !important;
 }
 .destaque .tenis li:hover {
   transform: translateY(-10px) !important;
@@ -111,6 +111,7 @@
   top: 0;
   opacity: 0;
   display: flex;
+  border-radius: 8px;
   align-items: center;
   justify-content: center;
   color: #f6f6f6;

@@ -17,13 +17,16 @@
     <header class="header"><p>Ganhe R$10,00 de desconto no frete</p></header>
     <p class="nameShop">Jordan Shoes</p>
     <section class="container-banner-text">
-      <div class="content">
-        <div class="title">
+      <div class="banner">
+        <div class="content">
+
           <h2>A melhor loja de Jordan</h2>
+
           <p class="text">
-            O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e
-            o jogador Michael Jordan.
+            <!-- O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e
+             o jogador Michael Jordan -->
           </p>
+
         </div>
       </div>
     </section>
@@ -88,7 +91,10 @@
     <footer class="footer"><p>Todos os direitos reservados.</p></footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script >
+      
       const sr = ScrollReveal({
         origin: "top",
         distance: "50px",
@@ -96,7 +102,16 @@
         reset: true,
       });
 
-      ScrollReveal().reveal(".tenis", sr);
+      ScrollReveal().reveal("li", sr);
+
+     
+      let typed = new Typed(".text", {
+    
+        strings:['',` O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.`],
+        typeSpeed:30,
+        showCursor   :false, 
+});
+      
     </script>
   </body>
 </html>
