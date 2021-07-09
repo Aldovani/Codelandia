@@ -67,6 +67,12 @@ $backgroundtenis: rgba(235, 233, 234, 1);
         margin-top: 20px;
         font-size: 18px;
         font-weight: 600;
+
+
+        &::after{
+          content: '|';
+          animation: typeWrite 0.7s infinite;
+        }
       }
     }
   }
@@ -103,7 +109,6 @@ $backgroundtenis: rgba(235, 233, 234, 1);
       justify-content: center;
       background-color: $backgroundtenis;
       border-radius: 4px;
-      transition: transform 500ms !important;
 
       &:hover {
         transform: translateY(-10px) !important;
@@ -179,5 +184,16 @@ $backgroundtenis: rgba(235, 233, 234, 1);
     p {
       padding: 0 10px;
     }
+  }
+}
+
+
+@keyframes typeWrite{
+  0%,100%{
+    opacity: 0;
+
+  }
+  50%{
+    opacity:  1;
   }
 }

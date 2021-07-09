@@ -64,6 +64,10 @@
   font-size: 18px;
   font-weight: 600;
 }
+.container-banner-text .banner .content .text::after {
+  content: "|";
+  animation: typeWrite 0.7s infinite;
+}
 
 .destaque {
   text-align: center;
@@ -95,7 +99,6 @@
   justify-content: center;
   background-color: #ebe9ea;
   border-radius: 4px;
-  transition: transform 500ms !important;
 }
 .destaque .tenis li:hover {
   transform: translateY(-10px) !important;
@@ -156,6 +159,14 @@
 @media (max-width: 420px) {
   .destaque p {
     padding: 0 10px;
+  }
+}
+@keyframes typeWrite {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
