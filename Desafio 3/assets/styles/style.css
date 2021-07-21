@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: #2b2b2b;
+  --text-color: #555555;
+  --blue-button: #6c63ff;
+  --background: #d7d4ff;
+  --lato: "Lato", sans-serif;
+  --merri: "Merriweather", serif;
+}
+
+.main {
+  background: var(--background);
+  padding: 3rem 0 6rem;
+}
+.main .text {
+  max-width: 25rem;
+}
+.main h1 {
+  font: 400 2.25rem var(--merri);
+  color: var(--title-color);
+}
+.main p {
+  font: 400 1.187rem var(--lato);
+  color: var(--text-color);
+  margin-top: 1.125rem;
+}
+.main .button {
+  margin-top: 2.81rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  background: var(--blue-button);
+  height: 3.125rem;
+  color: white;
+  border: 0;
+  padding: 0.812rem 3.125rem;
+  border-radius: 0.3125rem;
+  font: 700 1.25rem var(--lato);
+}
+
+section {
+  background: #f9f9f9;
+  padding-top: 9.35rem;
+}
+
+.cards.flex {
+  flex-wrap: wrap;
+  gap: 4.25rem 0;
+}
+
+.card {
+  box-shadow: 0px 0px 20px 0px #0000001a;
+  width: 340px;
+  background: white;
+}
+.card .rectangle {
+  width: 340px;
+  height: 220px;
+  background: var(--blue-button);
+}
+.card .text {
+  padding: 1.87rem;
+}
+.card h2 {
+  margin-bottom: 1.625rem;
+  font: 700 1.5rem var(--merri);
+}
+.card p {
+  font: 400 1.125rem var(--lato);
+}
+
+/*# sourceMappingURL=style.css.map */
