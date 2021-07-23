@@ -13,9 +13,79 @@
   --merri: "Merriweather", serif;
 }
 
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--blue-button);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: #d7d4ff;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
+  transform-origin: center;
+}
+.header.show {
+  position: fixed;
+  background-color: white;
+}
+.header .menu {
+  display: flex;
+  gap: 20px;
+}
+.header a {
+  font: 400 1.3rem var(--merri);
+  transition: 0.3s;
+}
+.header li::after {
+  content: "";
+  display: block;
+  background: #6c63ff;
+  height: 3px;
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.header a:hover {
+  color: var(--blue-button);
+}
+.header li:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  font: 700 2rem var(--lato);
+  color: var(--blue-button);
+}
+
 .main {
   background: var(--background);
-  padding: 3rem 0 6rem;
+  padding: 6rem 0 6rem 3rem;
 }
 .main .text {
   max-width: 25rem;

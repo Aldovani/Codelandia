@@ -14,7 +14,18 @@
     <title>Desafio 03</title>
   </head>
   <body>
-    <main class="main">
+    <header class="header">
+      <h1 class="logo">Desafio 03</h1>
+      <nav >
+
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a  href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="main">
       <div class="container flex">
         <div class="text">
           <h1>Lorem ipsum dolor sit amet</h1>
@@ -26,8 +37,8 @@
         </div>
         <img src="assets/img/present.svg" alt="" />
       </div>
-    </main>
-    <section class="section">
+    </section>
+    <section id="cards" class="section">
       <div class="cards container flex">
         <div class="card">
           <div class="rectangle"></div>
@@ -92,7 +103,7 @@
       </div>
     </section>
 
-    <section class="section-form">
+    <section id="contact" class="section-form">
       <div class="container flex">
         <h1 class="title">Entre en contato</h1>
 
@@ -100,10 +111,15 @@
           <input class="input" placeholder="Nome" type="text" required />
           <input class="input" type="email" placeholder="E-mail" required />
           <input class="input" type="number" placeholder="Telefone" required />
-          <textarea class="input area" placeholder="Mensagem..." required></textarea>
-          <button type="submit"  class="button">Enviar Mensagem</button>
+          <textarea
+            class="input area"
+            placeholder="Mensagem..."
+            required
+          ></textarea>
+          <button type="submit" class="button">Enviar Mensagem</button>
         </form>
       </div>
     </section>
+  <script src="assets/scripts/index.js"></script>  
   </body>
 </html>
