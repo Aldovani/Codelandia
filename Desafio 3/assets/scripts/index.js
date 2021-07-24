@@ -5,3 +5,14 @@ window.addEventListener("scroll", () => {
     document.querySelector(".header").classList.remove("show");
   }
 });
+
+document.querySelector(".container-menu").addEventListener("click", () => {
+  document.querySelector(".menu").classList.toggle("show");
+});
+  
+
+document.querySelectorAll(".menu li a ").forEach((e) => {
+  e.addEventListener("click", () => {
+    document.querySelector(".menu").classList.remove("show");
+  });
+});

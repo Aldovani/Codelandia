@@ -39,15 +39,15 @@ a {
 
 .header {
   background: #d7d4ff;
+
   height: 5rem;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   position: absolute;
-  width: 100%;
-  transition: 0.3s;
-  transform-origin: center;
 
   &.show {
     position: fixed;
@@ -57,12 +57,22 @@ a {
   .menu {
     display: flex;
     gap: 20px;
+    transition: 0.3s;
+
+    &.show {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      background: inherit;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   a {
     font: 400 1.3rem var(--merri);
     transition: 0.3s;
-
   }
 
   li::after {
@@ -81,6 +91,17 @@ a {
   li:hover::after {
     transform: scaleX(1);
   }
+}
+
+.container-menu {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+}
+.row {
+  width: 1.56rem;
+  height: 0.1875rem;
+  background: #2b2b2b;
 }
 
 .logo {
@@ -150,7 +171,6 @@ a {
   box-shadow: 0px 0px 20px 0px #0000001a;
   background: white;
   width: 21.25rem;
-  // width: 90%;
 
   .rectangle {
     height: 13.75rem;
@@ -210,5 +230,68 @@ a {
   }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 900px) {
+  .main {
+    padding-left: 0;
+    img {
+      width: 100%;
+    }
+
+    .flex {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+
+  .cards {
+    &.flex {
+      justify-content: center;
+    }.card {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    ul.menu {
+      position: absolute;
+
+      width: 100%;
+      left: -200%;
+      top: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 20px;
+
+      &.show {
+        background: white;
+        top: 100%;
+      }
+    }
+  }
+
+  .container-menu {
+    display: flex;
+    gap: 5px;
+  }
+
+  
+
+  .section-form {
+    .title{
+      text-align: center;
+    }
+    .container.flex {
+      align-items: stretch;
+    }
+    .form {
+      justify-content: stretch;
+    }
+    .input {
+      width: auto;
+    }
+  }
 }

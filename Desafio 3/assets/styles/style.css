@@ -42,13 +42,11 @@ a {
 .header {
   background: #d7d4ff;
   height: 5rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  width: 100%;
-  transition: 0.3s;
-  transform-origin: center;
 }
 .header.show {
   position: fixed;
@@ -57,6 +55,16 @@ a {
 .header .menu {
   display: flex;
   gap: 20px;
+  transition: 0.3s;
+}
+.header .menu.show {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background: inherit;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 .header a {
   font: 400 1.3rem var(--merri);
@@ -76,6 +84,18 @@ a {
 }
 .header li:hover::after {
   transform: scaleX(1);
+}
+
+.container-menu {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+}
+
+.row {
+  width: 1.56rem;
+  height: 0.1875rem;
+  background: #2b2b2b;
 }
 
 .logo {
@@ -192,6 +212,60 @@ a {
 }
 .section-form .button {
   margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-left: 0;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main .flex {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .cards.flex {
+    justify-content: center;
+  }
+  .cards .card {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .header ul.menu {
+    position: absolute;
+    width: 100%;
+    left: -200%;
+    top: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .header ul.menu.show {
+    background: white;
+    top: 100%;
+  }
+
+  .container-menu {
+    display: flex;
+    gap: 5px;
+  }
+
+  .section-form .title {
+    text-align: center;
+  }
+  .section-form .container.flex {
+    align-items: stretch;
+  }
+  .section-form .form {
+    justify-content: stretch;
+  }
+  .section-form .input {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
