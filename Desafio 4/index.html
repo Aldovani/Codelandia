@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Desafio 4</title>
+  </head>
+  <body>
+    <main class="container">
+      <section  class="imagem">
+        <img src="assets/img/logo.svg" alt="Imagem" />
+      </section>
+
+      <section class="form">
+        <div >
+
+          <p class="welcome">Bem vindo de volta</p>
+          <h1 class="login">Faça login na sua conta</h1>
+        <form>
+
+            <label for="email"> E-mail </label>
+            <input
+            class="input"
+            id="email"
+            placeholder="codelandia@gmail.com"
+            type="email"
+            />
+       
+
+            <label for="password"> Senha </label>
+            <input class="input" id="password" type="password" />
+         
+          
+          <div class="wrap">
+            <div class="wrap">
+              <input
+              type="checkbox"
+              checked
+              class="input-checkbox"
+              name=""
+              id="checkbox"
+              />
+              <label class="checkbox" for="checkbox">
+                <p>Lembre de mim</p>
+              </label>
+            </div>
+            <a href="#" class="link">Esqueceu a senha?</a>
+          </div>
+          
+          <button class="button" type="submit">Entrar</button>
+          <button class="button google" type="submit">
+            <i class="fa fa-google" aria-hidden="true"></i> Ou Login com o
+            Google
+          </button>
+        </div>
+        </form>
+
+        <p class="register">Não tem uma conta?<a href="#" class="link"> Cadastre-se</a></p>
+      </section>
+    </main>
+  </body>
+</html>
