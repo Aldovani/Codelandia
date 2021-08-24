@@ -18,7 +18,7 @@
 
 </div>
 
-## 👉 [Deploy da Aplicação](https://wizardly-kirch-f9dbc1.netlify.app/)
+## 👉 [Deploy da Aplicação](https://homepage-desafio03.netlify.app/)
 
 </br>
 

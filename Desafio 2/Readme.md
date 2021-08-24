@@ -18,7 +18,7 @@
 
 </div>
 
-## 👉 [Deploy da Aplicação](https://clever-joliot-9acbb1.netlify.app/)
+## 👉 [Deploy da Aplicação](https://jordanshoes-desafio02.netlify.app/)
 
 </br>
 
