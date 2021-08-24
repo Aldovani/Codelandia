@@ -103,7 +103,7 @@ label {
 }
 
 .input-checkbox:hover + .checkbox::after {
-  background-color: var(--green);
+  background-color:#04c35d25;
 }
 
 .input-checkbox:checked + .checkbox::after {
@@ -114,7 +114,7 @@ label {
   height: 3.125rem;
   width: 21.875rem;
   border: 0;
-  border: 5px;
+  border-radius: 5px;
   background: var(--green);
   color: var(--white);
   font: 700 1rem var(--lato);
@@ -140,6 +140,9 @@ margin-right: 0.688rem;
   align-items: center;
   justify-content: space-between;
 }
+.wrap.margim{
+margin: 0;
+}
 .link {
   color: var(--link);
 }
@@ -147,9 +150,35 @@ margin-right: 0.688rem;
   margin-top: 2rem;
 }
 
+.password{
+  display: flex;
+flex-direction: column;
+position: relative;
+align-items: center;
+width: 100%;
+}
+.password input{
+  padding-right: 12%;
+}
+
+.password button{
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+font-size: 1.3rem;
+}
+
 @media (max-width: 850px) {
   .imagem {
     display: none;
+  }
+
+  .modal .modal-body{
+    width: 50%;
+    
   }
 }
 @media (max-width: 500px) {
@@ -179,5 +208,10 @@ margin-right: 0.688rem;
   }
   .wrap {
     gap: 1rem;
+  }
+  .modal .modal-body{
+    width: 80%;
+    padding: 1.5rem;
+    
   }
 }
