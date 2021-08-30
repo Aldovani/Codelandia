@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,11 +17,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script>
+      window.addEventListener("load", (e) => {
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".container").style.display = "block";
+      });
+    </script>
   </head>
   <body>
+    <div class="preloader">
+      <img src="assets/img/image.png" class="ghost" alt="ghost" />
+    </div>
+
     <div class="container">
       <header class="header">
-        <a href="#">
+        <a href="https://studioghibli.com.br/" target="_blank">
           <img src="assets/img/logo.svg" alt="Logo" />
         </a>
 
@@ -51,20 +62,34 @@
           </p>
           <div class="wrap-button">
             <button class="button filled">
-              <p>
+              <a
+                target="_blank"
+                href="https://www.netflix.com/watch/60023642?source=35"
+              >
                 <i class="fa fa-play" aria-hidden="true"></i> Assistir agora
-              </p>
+              </a>
             </button>
-            <button class="button">
+            <button class="button" data-js="button-modal">
               <p>assista o trailer</p>
             </button>
           </div>
         </section>
 
         <section class="image">
-          <img src="assets/img/image.png" alt="" />
+          <img src="assets/img/image.png" class="ghost" alt="ghost" />
         </section>
       </main>
+    </div>
+    <div class="modal" data-js="modal">
+      <iframe
+        width="853"
+        height="480"
+        src="https://www.youtube.com/embed/SgZI655GgHk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
     <script src="assets/js/main.js"></script>
   </body>
