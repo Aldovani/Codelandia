@@ -1,5 +1,5 @@
 :root {
-  --background1: #628e75;
+  --background1: #628d75;
   --background2: #1a4855;
   --white: #f9f9f9;
 
@@ -18,18 +18,20 @@ a {
 
 body {
   height: 100vh;
-
   overflow-x: hidden;
 }
+
 .container {
-  height: 100%;
+  min-height: 100%;
   padding: 2% 10% 70px;
-  display: none;
   background: linear-gradient(
     to bottom right,
     var(--background1),
     var(--background2)
   );
+  display: none;
+  animation:  background 4s infinite alternate linear;
+
 }
 
 .header {
@@ -54,19 +56,17 @@ a {
 }
 
 main {
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
 
 .subtitle {
   font: 700 1.25rem var(--poppins);
   margin-top: 75px;
 }
 
-.texts{
+.texts {
   margin: 0;
 }
 .title {
@@ -95,9 +95,9 @@ main {
   border: 1px solid var(--background1);
   cursor: pointer;
   margin-top: 46px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.button:hover{
+.button:hover {
   opacity: 0.7;
 }
 .button.filled {
@@ -120,9 +120,8 @@ main {
   animation: fly 3s infinite linear;
 }
 
-
 .modal {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   z-index: 2;
   width: 100vw;
@@ -130,7 +129,11 @@ main {
   top: 0;
   display: none;
 }
-
+.modal video {
+  width: 70%;
+  height: auto;
+  border-radius: 1rem;
+}
 .hide {
   display: flex;
   align-items: center;
@@ -147,9 +150,14 @@ main {
     var(--background1),
     var(--background2)
   );
+  animation:  background 1s infinite linear;
 }
 
-
+@keyframes background{
+  to{
+   filter: hue-rotate(80deg);
+  }
+}
 
 @keyframes fly {
   0% {
@@ -167,32 +175,37 @@ main {
   main {
     flex-wrap: wrap-reverse;
   }
-  
-
 
   .image .ghost {
     width: auto;
     height: 300px;
   }
 
-  .title{
+  .title {
     font-size: 3.5rem;
   }
-  
-  .subtitle{
-    
+
+  .subtitle {
     margin-top: 0;
     font-size: 1.125rem;
   }
-  .description{
+  .description {
     font-size: 0.875rem;
   }
 
-
-  .button:not(.filled){
+  .button:not(.filled) {
     display: none;
   }
-  .wrap-button{
-    transform:  skewX(-25deg) translateX(20px);
+  .wrap-button {
+    transform: skewX(-25deg) translateX(20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .container{
+    padding: 5% 5% 70px;
+  }
+  .header .social{
+    gap: 20px;
   }
 }
