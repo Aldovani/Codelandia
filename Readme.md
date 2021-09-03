@@ -11,6 +11,7 @@
 - [x] [Desafio-03](https://github.com/Aldovani/codelandia/tree/master/Desafio%203)
 - [x] [Desafio-04](https://github.com/Aldovani/codelandia/tree/master/Desafio%204)
 - [x] [Desafio-05](https://github.com/Aldovani/codelandia/tree/master/Desafio%205)
+- [x] [Desafio-06](https://github.com/Aldovani/codelandia/tree/master/Desafio%206)
 
 
 

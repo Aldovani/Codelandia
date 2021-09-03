@@ -1,0 +1,23 @@
+.modal{
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: none;
+}
+.hide{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal  video{
+  width: 65%;
+  height: auto;
+  border-radius: 8px;
+}
