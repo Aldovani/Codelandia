@@ -21,3 +21,10 @@
   height: auto;
   border-radius: 8px;
 }
+
+@media (max-width:900px){
+  .modal video{
+    width: 80%;
+    height: auto;
+  }
+}
