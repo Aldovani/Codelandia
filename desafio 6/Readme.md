@@ -7,7 +7,7 @@
 </p>
 </br>
 <p align="center">
-  <img alt="Project" src=".github/loki.svg">
+  <img alt="Project" src=".github/Loki.svg">
 </p>
 
 </br>
