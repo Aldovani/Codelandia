@@ -12,6 +12,11 @@
 - [x] [Desafio-04](https://github.com/Aldovani/codelandia/tree/master/Desafio%204)
 - [x] [Desafio-05](https://github.com/Aldovani/codelandia/tree/master/Desafio%205)
 - [x] [Desafio-06](https://github.com/Aldovani/codelandia/tree/master/Desafio%206)
+- [x] [Desafio-07](https://github.com/Aldovani/codelandia/tree/master/Desafio%207)
+- [x] [Desafio-08](https://github.com/Aldovani/codelandia/tree/master/Desafio%208)
+- [x] [Desafio-09](https://github.com/Aldovani/desafio-portfolio)
+- [x] [Desafio-10](https://github.com/Aldovani/naped)
+- [ ] [Desafio-11](https://github.com/Aldovani/codelandia)
 
 
 
