@@ -12,7 +12,6 @@
 
 </br>
 
-<div align="center">
 
 
 </br>
@@ -25,7 +24,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-</div>
+
 
 </br>
 <div id="layout">

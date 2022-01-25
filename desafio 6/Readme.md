@@ -12,11 +12,11 @@
 
 </br>
 
-<div align="center">
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ee47b708-a20e-4037-97cf-6abac691c3cf/deploy-status)](https://zen-allen-c03ff5.netlify.app/)
 
-</div>
+
 
 ## 👉 [Deploy da Aplicação](https://loki-desafio6.netlify.app/)
 
