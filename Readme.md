@@ -16,7 +16,8 @@
 - [x] [Desafio-08](https://github.com/Aldovani/codelandia/tree/master/Desafio%208)
 - [x] [Desafio-09](https://github.com/Aldovani/desafio-portfolio)
 - [x] [Desafio-10](https://github.com/Aldovani/naped)
-- [ ] [Desafio-11](https://github.com/Aldovani/codelandia)
+- [x] [Desafio-11](https://github.com/Aldovani/memory-game)
+- [ ] [Desafio-12](https://github.com/Aldovani/codelandia)
 
 
 
