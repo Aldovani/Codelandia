@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Blog",
+    "image":"Desafios-Hub/assets/images/desafio01.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%201",
+    "url": "https://blog-desafio01.netlify.app/",
+    "tags": ["HTML", "SCSS", "JavaScript"]
+  },
+
+  {
+    "title": "Jordan Shoes",
+    "image":"Desafios-Hub/assets/images/desafio02.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%202",
+    "url": "https://jordanshoes-desafio02.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Landing Page",
+    "image":"Desafios-Hub/assets/images/desafio03.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%203",
+    "url": "https://homepage-desafio03.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Login page",
+    "image":"Desafios-Hub/assets/images/desafio04.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%204",
+    "url": "https://pagelogin-desafio4.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Viagem de Chihiro",
+    "image":"Desafios-Hub/assets/images/desafio05.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%205",
+    "url": "https://desafio5-studio-ghibli.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Loki",
+    "image":"Desafios-Hub/assets/images/desafio06.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%206",
+    "url": "https://loki-desafio6.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Valorant",
+    "image":"Desafios-Hub/assets/images/desafio07.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%207",
+    "url": "",
+    "tags": ["HTML", "CSS"]
+  },
+
+  {
+    "title": "CodeMoji",
+    "image":"Desafios-Hub/assets/images/desafio08.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%208",
+    "url": "",
+    "tags": ["HTML", "CSS"]
+  },
+
+  {
+    "title": "Portfolio",
+    "image":"Desafios-Hub/assets/images/desafio09.png",
+    "repository": "https://github.com/Aldovani/desafio-portfolio",
+    "url": "https://aldovani.github.io/desafio-portfolio/",
+    "tags": ["HTML", "TailwindCss", "JavaScript"]
+  },
+
+  {
+    "title": "Naped",
+    "image":"Desafios-Hub/assets/images/desafio10.png",
+    "repository": "https://github.com/Aldovani/naped",
+    "url": "https://naped-desafio.vercel.app/",
+    "tags": ["NextJs", "CSS", "TypeScript"]
+  },
+
+  {
+    "title": "Jogo da memória",
+    "image":"Desafios-Hub/assets/images/desafio11.png",
+    "repository": "https://github.com/Aldovani/memory-game",
+    "url": "https://memory-card-desafio.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+
+  {
+    "title": "La pizza",
+    "image":"Desafios-Hub/assets/images/desafio12.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2012",
+    "url": "",
+    "tags": ["HTML", "CSS"]
+  }
+]
