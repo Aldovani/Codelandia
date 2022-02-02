@@ -35,26 +35,31 @@ projects.forEach((project, index) => {
 });
 
 
-window.onload = function () {
   anime({
     targets: ".title",
     translateX: ["-100vw", "0%"],
+    opacity: [0, 1],
     duration: 2000,
   });
   anime({
     targets: ".subtitle",
     translateX: ["100vw", "0%"],
+    opacity: [0, 1],
+
     duration: 2000,
   });
-  //
   anime({
     targets: [".icon-1", ".icon-4"],
     translateY: ["-100vh", "0"],
     duration: 1000,
+    opacity: [0, 1],
+
     easing: "easeInOutQuad",
     rotate: "360deg",
   });
   anime({
+    opacity: [0, 1],
+
     targets: [".icon-2", ".icon-5"],
     translateY: ["100vh", "0"],
     duration: 1000,
@@ -63,13 +68,17 @@ window.onload = function () {
   });
   anime({
     targets: [".icon-3"],
+
+    opacity: [0, 1],
     translateX: ["-100vw", "0"],
     translateY: ["-100vh", "0"],
     duration: 1000,
     easing: "easeInOutQuad",
     rotate: "360deg",
   });
-  anime({
+anime({
+  opacity: [0, 1],
+    
     targets: [".icon-6"],
     translateX: ["-100vw", "0"],
     translateY: ["100vh", "0"],
@@ -77,8 +86,13 @@ window.onload = function () {
     easing: "easeInOutQuad",
     rotate: "360deg",
   });
-};
 
+anime({
+  targets:".header",
+  opacity: [0, 1],
+  duration: 10000,
+
+  })
 
 document.querySelectorAll(".svg").forEach((svg) => {
   svg.addEventListener("click", () => {

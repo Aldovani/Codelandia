@@ -32,6 +32,7 @@ body {
   left: 0;
   padding: 1rem;
   z-index: 4;
+  opacity: 0;
 }
 
 .header h1 {
@@ -46,11 +47,16 @@ body {
 }
 
 
+.header a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
 
 .header svg {
-  width: 40px;
-  height: 40px;
-margin-left: 20px;
+  height: 100%;
+  width: 100%;
 
 
 }
@@ -61,6 +67,7 @@ margin-left: 20px;
   color: #fff;
   text-align: center;
   font-weight: 700;
+  opacity: 0;
   text-transform: uppercase;
 }
 
@@ -159,29 +166,36 @@ margin-left: 20px;
   height: 50px;
   position: absolute;
 }
+
 .icon-1 {
   top: 20%;
   left: 50%;
+
 }
 .icon-2 {
   top: 25%;
   right: 10%;
+
 }
 .icon-3 {
   top: 25%;
   left: 20%;
+ 
 }
 .icon-4 {
   bottom: 25%;
   right: 25%;
+
 }
 .icon-5 {
   top: 80%;
   left: 50%;
+ 
 }
 .icon-6 {
   bottom: 25%;
   left: 22%;
+ 
 }
 
 @media (max-width: 768px) {
@@ -207,4 +221,25 @@ margin-left: 20px;
   .grid {
     grid-template-columns: 1fr;
   }
+  .header h1{
+font-size: 1.5rem;
+  }
+  .header a{
+    height: 30px;
+    width: 30px;
+  }
+
+  .icon-1{
+top: 30%;
+  }
+  .icon-5{
+    top: 60%;
+    right: 30%;
+  }
+  .icon-4{
+    top: 70%;
+    right: 10%;
+  }
 }
+
+
