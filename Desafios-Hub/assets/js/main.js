@@ -65,6 +65,8 @@ projects.forEach((project, index) => {
     duration: 1000,
     easing: "easeInOutQuad",
     rotate: "360deg",
+    opacity:[0,1],
+
   });
   anime({
     targets: [".icon-3"],
@@ -78,8 +80,8 @@ projects.forEach((project, index) => {
   });
 anime({
   opacity: [0, 1],
-    
-    targets: [".icon-6"],
+  targets: [".icon-6"],
+    opacity:[0,1],
     translateX: ["-100vw", "0"],
     translateY: ["100vh", "0"],
     duration: 1000,

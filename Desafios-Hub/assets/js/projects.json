@@ -88,5 +88,19 @@
     "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2012",
     "url": "",
     "tags": ["HTML", "CSS"]
+  },
+  {
+    "title": "Arcane",
+    "image":"Desafios-Hub/assets/images/desafio13.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2013",
+    "url": "",
+    "tags": ["HTML", "CSS"]
+  },
+  {
+    "title": "Help Dog",
+    "image":"Desafios-Hub/assets/images/desafio14.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2014",
+    "url": "",
+    "tags": ["HTML", "CSS"]
   }
 ]
