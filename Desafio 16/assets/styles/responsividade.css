@@ -1,0 +1,48 @@
+@media(max-width: 1200px){
+
+  .main{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+gap: 3rem;
+  }
+}
+@media(max-width: 900px){
+
+ .header .navigation{
+    position: fixed;
+    top:-100%;
+  transition: top .5s;
+  
+  width: 100%;
+  height: 100vh;
+  background:#f8f8f8;
+  left: 0;
+  z-index: 10;
+  transition: all .5s;
+  }
+
+  .navigation ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+  .main >img{
+    width: 100%;
+  }
+  .footer .flex{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer .navigation ul{
+    gap: 12px;
+  }
+  .main-content h2{
+    font-size: 2rem;
+  }
+}
