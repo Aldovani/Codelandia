@@ -86,7 +86,7 @@
     "title": "La pizza",
     "image":"Desafios-Hub/assets/images/desafio12.png",
     "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2012",
-    "url": "",
+    "url": "https://aldovani.github.io/codelandia/Desafio%2012/",
     "tags": ["HTML", "CSS"]
   },
   {
@@ -102,5 +102,19 @@
     "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2014",
     "url": "",
     "tags": ["HTML", "CSS"]
+  },
+  {
+    "title": "Feliz natal",
+    "image":"Desafios-Hub/assets/images/desafio16.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2016",
+    "url": "https://aldovani.github.io/codelandia/Desafio%2016/",
+    "tags": ["HTML", "CSS","JavaScript"]
+  },
+  {
+    "title": "Kenai",
+    "image":"Desafios-Hub/assets/images/desafio17.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2017",
+    "url": "",
+    "tags": ["Sass", "Vite", "React"]
   }
 ]
