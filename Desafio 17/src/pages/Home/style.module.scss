@@ -1,0 +1,177 @@
+.header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.logo {
+  background: #ffa634;
+  background: -webkit-linear-gradient(to right, #ffa634 0%, #ff267a 100%);
+  background: -moz-linear-gradient(to right, #ffa634 0%, #ff267a 100%);
+  background: linear-gradient(to right, #ffa634 0%, #ff267a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--mukta);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 66px;
+}
+.time {
+  font-family: var(--open);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  color: var(--white);
+}
+
+.main {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white);
+  padding-bottom: 5rem;
+
+  h2 {
+    font-family: var(--open);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 87px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: var(--open);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+.accounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+  margin-top: 150px;
+
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .circle {
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    font-family: var(--open);
+    transition: opacity 0.5s ease;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+
+    &.circle-1 {
+      background: linear-gradient(225deg, #781fd1 0%, #570eab 100%);
+    }
+    &.circle-2 {
+      background: linear-gradient(180deg, #64fa9b 0%, #5fe36a 100%);
+    }
+    &.circle-3 {
+      background: linear-gradient(180deg, #4df0f3 0%, #4d7bfd 100%);
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+    &:hover + .account-name {
+      color: #fff;
+    }
+  }
+  .account-name {
+    font-family: var(--open);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: var(--tertiary-color);
+    transition: color 0.5s ease;
+    position: relative;
+
+    animation: fadeInName 0.5s ease-in-out;
+  }
+}
+.button {
+  margin-top: 150px;
+  background: var(--gray-dark);
+  padding: 16px 40px;
+  font-family: var(--open);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--white);
+  text-align: center;
+  border: 0;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: 30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fadeInName {
+  from {
+    opacity: 0;
+    top: 30px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    text-align: center;
+    padding: 2rem;
+    h2 {
+      font-size: 40px;
+      line-height: 54px;
+    }
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  .accounts {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 2rem;
+  }
+  .time {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .main {
+  }
+}
