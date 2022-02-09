@@ -1,0 +1,39 @@
+.preloader{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right $dark 0%, #000 100%);
+
+  .logo-spiderman{
+    fill: transparent;
+    animation: logo-spiderman 10s infinite alternate;
+    stroke: $red;
+    
+  }
+ 
+}
+
+
+@keyframes logo-spiderman{
+  0%{
+
+    fill: transparent;
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+  }
+  25%{
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+    
+  }
+  60%,100%{
+    stroke-width: 0.3;
+    fill: $red;
+  }
+}
