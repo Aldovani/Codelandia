@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 40px 0;
+
+  p {
+    font-family: $sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: $gray-200;
+  }
+}

@@ -1,0 +1,527 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9 ;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  margin: 0 135px;
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  padding: 24px 0;
+}
+.header .logo {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #293145;
+  position: relative;
+  left: 24px;
+  padding-left: 12px;
+}
+.header .logo::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0f9afe;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+.header .logo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #293145;
+  transform: translateY(-50%);
+}
+.header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .links {
+  display: flex;
+  gap: 66px;
+}
+.header .links.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.header .links a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  color: #6e7275;
+  transition: color 0.3s ease;
+}
+.header .links a:hover {
+  color: #0f9afe;
+}
+.header .links a:hover::after {
+  width: 100%;
+}
+.header .links a::after {
+  content: "";
+  transition: all 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f9afe;
+}
+.header .hamburger {
+  display: none;
+  font-size: 2rem;
+}
+
+.main {
+  background: #EFF8FF;
+  padding: 70px 0;
+}
+.main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+.main h2 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #293145;
+  max-width: 570px;
+}
+.main .button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  background: #0f9afe;
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  border: 0;
+  padding: 16px 36px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.main .button:hover {
+  opacity: 0.5;
+}
+.main .app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .app-content p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 440px;
+  color: #6e7275;
+  margin: 24px 0 32px;
+}
+.main .app-content div {
+  display: inline-block;
+}
+.main .app-content div > img {
+  margin-right: 21px;
+}
+
+.section {
+  text-align: center;
+  padding: 56px 0 110px;
+}
+.section h2 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #293145;
+  margin-bottom: 80px;
+}
+.section .grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+.section .grid .grid-item h3 {
+  margin: 30px 0 1rem;
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #293145;
+}
+.section .grid .grid-item p {
+  max-width: 250px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #6e7275;
+}
+
+.planos {
+  text-align: center;
+  margin-bottom: 130px;
+}
+.planos .container h2 {
+  margin-top: 50px;
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #293145;
+}
+.planos .container > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 570px;
+  margin: 0 auto 98px;
+  color: #6e7275;
+}
+.planos .grid {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+  justify-content: center;
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+.planos .plano {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #293145;
+  background: #EFF8FF;
+  min-width: 100%;
+  height: 471px;
+  padding: 32px 0 64px;
+  border-radius: 8px;
+}
+.planos .plano.plano--background {
+  background-color: #293145;
+  color: #fff;
+}
+.planos .plano.plano--background > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.planos .plano.plano--background .price {
+  color: #fff;
+}
+.planos .plano.plano--background .description {
+  color: #dbdbdb;
+}
+.planos .plano .plano__type {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.planos .plano .plano__preference {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 32px;
+  letter-spacing: 0.2em;
+  border-radius: 15px;
+  background-color: #0f9afe;
+  color: #fff;
+}
+.planos .plano .price {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #293145;
+}
+.planos .plano .price .price__coin {
+  font-size: 20px;
+  line-height: 23px;
+}
+.planos .plano .price .price__value {
+  font-size: 50px;
+  line-height: 59px;
+}
+.planos .plano .price .price__month {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+}
+.planos .plano .description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6e7275;
+  max-width: 300px;
+  padding: 0 1rem;
+}
+.planos .plano .button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  background: #0f9afe;
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  border: 0;
+  padding: 8px 80px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.planos .plano .button:hover {
+  opacity: 0.5;
+}
+
+.contato {
+  background: url("../images/contatoBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.contato::after {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 49, 69, 0.7);
+}
+.contato .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.contato h2 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.contato p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 530px;
+  margin: 1rem auto 93px;
+  color: #dbdbdb;
+}
+.contato form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contato form input {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  padding: 0 1rem;
+  font-size: 18px;
+  border: 0;
+  width: 300px;
+  background: transparent;
+  height: 40px;
+  border-bottom: 1px solid #fff;
+}
+.contato form input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.contato form .button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background: #0f9afe;
+  border-radius: 50px;
+  padding: 8px 32px;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.contato form .button:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.footer p {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #293145;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 24px 0;
+  }
+  .header .links {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+
+  .main .container > div {
+    align-items: center;
+    gap: 20px;
+  }
+  .main h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 60px;
+  }
+
+  .main .container {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .main .container h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .main .container .app-content {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .main .container .app-content p {
+    margin-inline: auto;
+  }
+  .main .container .app-content > div {
+    margin: auto;
+  }
+  .main .container .app-content > div img {
+    margin: 0;
+  }
+}
+@media (min-width: 2400px) {
+  .container {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 0 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
