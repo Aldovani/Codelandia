@@ -116,5 +116,19 @@
     "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2017",
     "url": "",
     "tags": ["Sass", "Vite", "React"]
+  },
+  {
+    "title": "Spider-man",
+    "image":"Desafios-Hub/assets/images/desafio18.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2018",
+    "url": "https://aldovani.github.io/codelandia/Desafio%2018/",
+    "tags": ["Sass", "HTML", "JavaScript"]
+  },
+  {
+    "title": "Rachi",
+    "image":"Desafios-Hub/assets/images/desafio19.png",
+    "repository": "https://github.com/Aldovani/codelandia/tree/master/Desafio%2019",
+    "url": "https://aldovani.github.io/codelandia/Desafio%2019/",
+    "tags": ["Sass", "HTML", "JavaScript"]
   }
 ]
