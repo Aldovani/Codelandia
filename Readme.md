@@ -20,7 +20,11 @@
 - [x] [Desafio-12](https://github.com/Aldovani/codelandia/tree/master/Desafio%2012)
 - [x] [Desafio-13](https://github.com/Aldovani/codelandia/tree/master/Desafio%2013)
 - [x] [Desafio-14](https://github.com/Aldovani/codelandia/tree/master/Desafio%2014)
-- [ ] [Desafio-16](https://github.com/Aldovani/codelandia)
+- [x] [Desafio-16](https://github.com/Aldovani/codelandia/tree/master/Desafio%2016)
+- [x] [Desafio-17](https://github.com/Aldovani/codelandia/tree/master/Desafio%2017)
+- [x] [Desafio-18](https://github.com/Aldovani/codelandia/tree/master/Desafio%2018)
+- [x] [Desafio-19](https://github.com/Aldovani/codelandia/tree/master/Desafio%2019)
+- [ ] [Desafio-20](https://github.com/Aldovani/codelandia)
 
 
 
