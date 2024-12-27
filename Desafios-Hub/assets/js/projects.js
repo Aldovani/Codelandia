@@ -1,4 +1,4 @@
-[
+export const projects =[
   {
     "title": "Blog",
     "image": "Desafios-Hub/assets/images/desafio01.png",
