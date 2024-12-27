@@ -1,6 +1,4 @@
-import * as data from "./projects.json " assert { type: "json" };
-
-const projects = data.default;
+import {projects} from "./projects.js";
 
 const gridElement = document.querySelector(".grid");
 
